@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\css\css.css">
+    <link rel="icon" href="..\img\logo_.png" type="image/x-icon">
+    <title>Главная</title>
+</head>
+<body>
+    <header> 
+        <p class="ALLcenter">
+        <a href="index.html"><img src="..\img\logo_.png" alt="" class="logo"></a>
+    </p>
+    <p class="menuCENTR">
+        <a href="index.html"  class="menu">Главная</a>
+        <a href="katalog.html" class="menu">Каталог</a>
+        <a href="" class="menu">Аукцион от 1 рубля</a>
+        <a href="" class="menu">Онлайн-аукцион</a>
+        <a href="" class="menuAVT">Войти</a>
+        <a href="" class="menuAVT">Регистрация</a>
+    </p>
+    </header>
+    <br>
+    <!-- Карусель -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="https://auction.ru/banners/mainpage/446898ad7b44d3b22b7b35fe6388cecd.png" style="width:100%">
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="https://auction.ru/banners/mainpage/55ea1e0390bf7de1e6d060337624f667.png" style="width:100%">
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="https://auction.ru/banners/mainpage/a0c07fc0a99fe5119fcb0488556c7cdc.png" style="width:100%">
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="https://auction.ru/banners/mainpage/f9c119ef288d36947febdc793385db58.jpg" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="https://auction.ru/banners/mainpage/3d631e7d6584af06ce7af7e2d30a4060.jpg" style="width:100%">
+            <div class="text"></div>
+          </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+        </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+<!-- КОНЕЦ КАРУСЕЛИ -->
+
+<p class="ALLcenter">
+    О нашем интенер аукционе.<br>
+Мы начали работу и сразу же завоевали значительную долю рынка среди торговых площадок. <br><br>
+Interction имеет современный удобный дизайн и все условия для эффективной работы, как частным продавцам, <br>
+ так и интернет-магазинам с автоматической загрузкой товаров на сайт.<br>
+ У нас работает сервис Interction доставка, оплата на сайте и гарантия возврата денежных средств», <br>
+  постоянная служба поддержки пользователей, а также много удобных опций для продаж и покупок.<br>
+На сегодняшний день Interction является крупнейшей площадкой по торговле антиквариатом и предметам коллекционирования.<br>
+ На сайте можно найти уникальные предметы коллекционирования и антиквариат, винтажные вещи, украшения, <br>
+  ретротехнику, эксклюзивные брендовые вещи, часы, электронику, а также множество других товаров.<br>
+Удачных покупок и продаж!
+</p>
+<br>
+
+<div class="divDIVOV"><a href="katalog.html">
+    <div class="PROSTOdiv">
+        <img src="https://static.auction.ru/offer_images/rd48/2022/09/18/06/small/V/VZsAaOPzt5i/rubl_1741_ioann_antonovich_spb_gurt_nadpis.jpg" alt="">
+        <p>Рубль 1741 <br> Иоанн Антонович.
+            <br> СПБ гурт</p>
+            <p>12 300 p.</p>
+    </div></a>
+    <a href="katalog.html">    <div class="PROSTOdiv">
+        <img src="https://static.auction.ru/offer_images/rd48/2020/08/31/09/small/Q/Ql1o9udBH7M/nabor_dlja_pokera_na_300_fishek_stars_14_gramm_v_aljuminievom_kejse.jpg" alt="">
+        <p>Набор для покера на 300 <br> фишек STARS <br> (14 грамм)</p>
+        <p>47 000 p.</p>
+    </div> </a>
+
+    <a href="katalog.html">    <div class="PROSTOdiv">
+        <img src="https://static.auction.ru/offer_images/rd48/2022/09/18/11/small/Y/ykfIMyQzyUc/amforisk_finikijskoe_steklo_i_iii_vv_806.jpg" alt="">
+        <p>Амфориск <br> Финикийское стекло <br> I-III вв [806]</p>
+        <p>7 000 p.</p>
+    </div> </a>
+
+    <a href="katalog.html"><div class="PROSTOdiv">
+        <img src="https://static.auction.ru/offer_images/rd48/2022/11/13/02/small/L/lVLUcDKzegY/original_bronzovoj_medali_london_2012.jpg" alt="">
+        <p>Оригинал <br> бронзовой медали <br> London 2012</p>
+        <p>4 100 p.</p>
+    </div> </a>
+  
+    <a href="katalog.html">    <div class="PROSTOdiv">
+        <img src="https://static.auction.ru/offer_images/rd48/2021/08/05/11/small/B/BQTLI57bYv1/rubl_1830_spb_ng_dlinnye_lenty.jpg" alt="">
+        <p>Рубль 1830 <br> СПБ НГ.<br> Длинные ленты<br> </p>
+        <p>56 000 p.</p>
+    </div> </a>
+
+    <a href="katalog.html">    <div class="PROSTOdiv">
+        <img src="https://static.auction.ru/offer_images/rd48/2023/02/21/05/small/G/GMWbzItXJbA/100_rublej_1999_god_pushkin_zoloto_900_pr_ves_15_55_gramm_1_2_390.jpg" alt="">
+        <p>100 рублей 1999 год. <br> Пушкин. Золото 900 пр <br> 15.15 грамм</p>
+        <p>353 000 p.</p>
+    </div> </a>
+
+    <a href="katalog.html">    <div class="PROSTOdiv">
+        <img src="https://static.auction.ru/offer_images/rd48/2020/10/11/07/small/D/dAvtXXlIddb/komsomolsk_na_amure_2019_g_aviazavod_knaaz_k_85_letiju_samolet_su_35_bronza_emal_2_vida.jpg" alt="">
+        <p>Комсмольск-на-Амуре, 2019г<br> Авиазавод КНААЗ<br>к 85-летию, Самолёт СУ-35<br> </p>
+        <p>1 450 p.</p>
+    </div> </a>
+
+    <a href="katalog.html">    <div class="PROSTOdiv">
+        <img src="https://static.auction.ru/offer_images/rd48/2022/11/29/01/small/V/vewyXQYecWR/avtomat_kalashnikova_skhp.jpg" alt="">
+        <p>Автомат Калашникова  <br> СХП<br> </p>
+        <p>50 000 p.</p>
+    </div> </a>
+
+    <a href="katalog.html">    <div class="PROSTOdiv">
+        <img src="https://static.auction.ru/offer_images/rd48/2023/03/14/08/small/S/SD66lDiXNNo/zoloto_56_proba_krupnye_sergi_malinki_s_brilliantami_3_7_ct_staroj_ogranki_2_sm_9_4_gr.jpg" alt="">
+        <p>Золото 56 проба <br> с бриллиантами 3,7 ct <br>  9,4 гр</p>
+        <p>349 500 p.</p>
+    </div> </a>
+
+    <a href="katalog.html">    <div class="PROSTOdiv">
+        <img src="https://static.auction.ru/offer_images/rd48/2023/03/11/12/small/S/SBTpXhz3tQw/kollekcija_jubilejnykh_i_pamjatnykh_monet_rossii_94_shtuk_v_bloknote.jpg" alt="">
+        <p>Коллекция юбилейных, <br> памятных монет России <br> 94 штук в блокноте</p>
+        <p>7 000 p.</p>
+    </div> </a>
+
+</div>
+
+<br>
+    <footer> <br>
+        <p>
+            <div class="textcols">
+                <div class="textcols-item">
+            <a href="katalog.html" class="footlinks">Каталог  </a> <br><br>
+<a href="" class="footlinks">О нас</a>   <br><br>
+<a href="" class="footlinks">Аукцион от 1 рубля </a><br><br>
+<a href="" class="footlinks">Онлайн-аукцион</a> <br><br><br>
+Copyright © торговая площадка и <br>
+интернет-аукцион Interction 2015-2023 <br>
+Все права защищены<br>
+Используя сайт, вы принимаете соглашение <br>
+и описанную в нем политику сбора данных о пользователях,
+ в частности, использования файлов cookie.
+                </div>
+                <div class="textcols-item">
+                    <a href="" class="footlinks">Доставка Interction</a>  <br><br>
+                    <a href="" class="footlinks">Помощь </a> <br><br>
+                    Связаться с нами <br>
+                    Телефон: 8-800-555-35-55<br>
+                    Почта: interction74@gmail.com <br>
+                    184914, Московская область, город Шаховская, въезд Ленина, 26 <br>
+                    
+                    <a href="index.html"><img src="..\img\1.png" alt=""></a>
+                    <a href="https://dzen.ru/?utm_referer=yandex.ru"><img src="..\img\yan.png" alt="" class="logo"></a>
+                    <a href="https://web.telegram.org/z/"><img src="..\img\tg.png" alt="" class="logo"></a>
+                    <a href="https://vk.com/feed"><img src="..\img\vk.png" alt="" class="logo"></a>
+                </div>
+            </div>
+        </p>
+        <br>
+    </footer>
+</body>
+</html>
